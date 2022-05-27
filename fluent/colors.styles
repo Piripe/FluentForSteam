@@ -1,0 +1,104 @@
+"colors.styles" {
+	colors {
+        accent="61 174 233 255"
+        contrastedAccent="0 72 233 255"
+
+        background1="32 32 32 255"
+        background2="39 39 39 255"
+        background3="50 50 50 255"
+
+
+
+        // ==================
+        //      Controls
+        // ==================
+
+        // Button        
+        buttonNormal = "45 45 45 255"
+		buttonHover = "50 50 50 255"
+		buttonActive = "39 39 39 255"
+		buttonDisabled = "42 42 42 255"
+
+		buttonTextDisabled = "255 255 255 92"
+        
+        buttonAccent = "96 205 255 255"
+        buttonAccentHover = "102 210 254 255"
+
+        buttonPageNormal = "62 62 62 255"
+		buttonPageHover = "67 67 67 255"
+		buttonPageActive = "56 56 56 255"
+
+        // Control Buttons
+        controlButtonsHover = "45 45 45 255"
+        controlButtonsActive = "41 41 41 255"
+        controlButtonsCloseHover = "194 43 28 255"
+        controlButtonsCloseActive = "179 39 28 255"
+
+        // Label
+        labelURLAccent = "156 235 255 255"
+
+        // ListPanel
+        listPanelBackground = "43 43 43 255"
+        listPanelSelection = "17 76 123 255"
+        listPanelSelectionHover = "9 88 150 255"
+        listPanelHover = "55 55 55 255"
+
+        // Menu
+        menuBackground = "44 44 44 255"
+
+        // MenuItem
+        menuItemSelected = "56 56 56 255"
+        menuItemSelectedAccent = "64 189 255 255"
+        menuItemSeparator = "61 61 61 255"
+
+        // Page
+        pageBackground = background2
+        cardBackground = background3
+
+        // PageTab
+        pageTabSelected = "40 40 40 255"
+        pageTabHover = "45 45 45 255"
+        pageTabActive = "41 41 41 255"
+
+        //ProgressBar
+        progressBarBorder = "154 154 154 255"
+
+        //ScrollBar
+        scrollBarBackground = "44 44 44 255"
+        scrollBarHandle = "159 159 159 255"
+
+        // TextEntry      
+        textEntryNormal = "45 45 45 255"
+		textEntryHover = "50 50 50 255"
+		textEntryFocus = "31 31 31 255"
+        
+        textEntryPageNormal = "52 52 52 255"
+		textEntryPageHover = "57 57 57 255"
+		textEntryPageFocus = "33 33 33 255"
+
+		textEntryDisabled = "42 42 42 255"
+        textEntrySelectionBackground = "0 99 177 255"
+
+
+        // ==================
+        //      Global
+        // ==================
+
+        textColor = "255 255 255 255"
+        textColorDisabled = "255 255 255 92"
+        focusedFrameTitle = textColor
+        unfocusedFrameTitle = textColorDisabled
+        dialogBackground = background1
+        
+
+        // ==================
+        //      Random
+        // ==================
+
+        // Account Menu
+        accountMenuSeparator = "61 61 61 255"
+
+        // Screenshot Manager
+        screenshotManagerThumbnailSelectedAccent = "64 189 255 255"
+	}
+}

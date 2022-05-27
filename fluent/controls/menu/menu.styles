@@ -1,0 +1,116 @@
+"menu.styles" {
+    include "fluent/colors.styles"
+
+    styles {
+        Menu {
+            bgcolor="menuBackground"
+            padding-right=4
+            inset="2 2 2 2"
+            render_bg {
+                0="fill( x0+8, y0+8, x1-8, y1-8, menuBackground )"
+                1="image(x0, y0, x0+8, y0+8, fluent/controls/menu/background/tl.tga)"
+                2="image_tiled(x0+8, y0, x1-8, y0+8, fluent/controls/menu/background/t.tga)"
+                3="image(x1-8, y0, x1, y0+8, fluent/controls/menu/background/tr.tga)"
+                4="image_tiled(x1-8, y0+8, x1, y1-8, fluent/controls/menu/background/r.tga)"
+                5="image(x1-8, y1-8, x1, y1, fluent/controls/menu/background/br.tga)"
+                6="image_tiled(x0+8, y1-8, x1-8, y1, fluent/controls/menu/background/b.tga)"
+                7="image(x0, y1-8, x0+8, y1, fluent/controls/menu/background/bl.tga)"
+                8="image_tiled(x0, y0+8, x0+8, y1-8, fluent/controls/menu/background/l.tga)"
+            }
+            corner_rounding=8
+        }
+
+        MenuItem {
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            textcolor="white"
+            padding-left=6
+            padding-right=6
+            padding-top=10
+            padding-bottom=10
+            bgcolor="none"
+            render_bg {}
+        }
+
+        MenuItem:selected {
+            render_bg {
+                0="fill(x0+7,y0,x1-7,y1,menuItemSelected)"
+                1="fill(x0+4,y0+3,x1-4,y1-3,menuItemSelected)"
+                2="image(x0+4,y0,x0+7,y0+3,fluent/controls/menu/item/selected/tl.tga)"
+                3="image(x1-7,y0,x1-4,y0+3,fluent/controls/menu/item/selected/tr.tga)"
+                4="image(x1-7,y1-3,x1-4,y1,fluent/controls/menu/item/selected/br.tga)"
+                5="image(x0+4,y1-3,x0+7,y1,fluent/controls/menu/item/selected/bl.tga)"
+                // The next drawing are for the accent dot at the left of the MenuItem
+                //6="image(x0+5,y0+6,x0+8,y0+8,fluent/controls/menu/item/selected/t.tga)"
+                //7="image(x0+5,y1-8,x0+8,y1-6,fluent/controls/menu/item/selected/b.tga)"
+                //8="fill(x0+5,y0+8,x0+8,y1-8,menuItemSelectedAccent)"
+            }
+        }
+
+        MenuItem:disabled {
+            textcolor="labeldisabled"
+            shadowtextcolor=none
+        }
+
+
+        
+        SuperNavMenu {
+            minimum-width=20
+            padding-left=8
+            padding-right=8
+            inset="2 2 2 2"
+
+            render {}
+
+            render_bg {
+                0="fill( x0+8, y0+8, x1-8, y1-8, menuBackground )"
+                1="image(x0, y0, x0+8, y0+8, fluent/controls/menu/background/tl.tga)"
+                2="image_tiled(x0+8, y0, x1-8, y0+8, fluent/controls/menu/background/t.tga)"
+                3="image(x1-8, y0, x1, y0+8, fluent/controls/menu/background/tr.tga)"
+                4="image_tiled(x1-8, y0+8, x1, y1-8, fluent/controls/menu/background/r.tga)"
+                5="image(x1-8, y1-8, x1, y1, fluent/controls/menu/background/br.tga)"
+                6="image_tiled(x0+8, y1-8, x1-8, y1, fluent/controls/menu/background/b.tga)"
+                7="image(x0, y1-8, x0+8, y1, fluent/controls/menu/background/bl.tga)"
+                8="image_tiled(x0, y0+8, x0+8, y1-8, fluent/controls/menu/background/l.tga)"
+            }
+            corner_rounding=8
+            // render_bg
+            // {
+            //     // top area and graphic
+            //     0="fill( x0, y0, x1, y1, MenuBg )"
+            //     1="image( x0, y0, x1, y1, graphics/clienttexture8)"
+
+            //                         // lines around
+            //         2="fill( x0 + 1, y0, x1 - 1, y0 + 1, blueborder )"  // top
+            //         3="fill( x0 + 1, y1 - 1, x1 - 1, y1, blueborder )"  // bottom
+            //         4="fill( x0, y0 + 1, x0 + 1, y1 - 1, blueborder )"  // left
+            //         5="fill( x1 - 1, y0 + 1, x1, y1 - 1, blueborder )"  // right
+            // }
+        }
+
+        SuperNavMenuItem {
+            padding=1
+            font-size=14
+            font-weight=regular
+            textcolor="label"
+            bgcolor=none
+            font-style="uppercase"
+        }
+
+        SuperNavMenuItem:selected {
+            textcolor="SuperNav"
+        }
+
+        SuperNavMenuItem:hover {
+            textcolor="SuperNavHover"
+        }
+
+        "SuperNavMenuDivider" {
+            textcolor="none"
+            render {
+                1="fill( x0+6, y0+1, x1-6, y0+2, SuperDivider )"
+            }
+        }
+    }
+}

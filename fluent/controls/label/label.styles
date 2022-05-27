@@ -1,0 +1,30 @@
+"label.styles" {
+    include "fluent/colors.styles"
+    styles {
+        
+
+        Label {
+            textcolor=textColor
+            selectedtextcolor=textColor
+            bgcolor="none"
+            font-family=basefont
+            font-size=18
+            font-weight=400
+ 		}
+
+        URLLabel {
+            textcolor="labelURLAccent"
+            bgcolor="none"
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            font-style=underline
+        }
+
+        URLLabel:Hover {
+            textcolor="labelURLAccent"
+            font-size=18
+            font-style=""
+        }
+    }
+}

@@ -1,0 +1,63 @@
+"radioBUtton.styles" {
+    include "fluent/colors.styles"
+
+    styles {
+        RadioButton {
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            textcolor="white"
+            image="fluent/controls/radioButton/unselected.tga"
+        }
+        
+        "Page RadioButton" {
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            textcolor="white"
+            image="fluent/controls/radioButton/page/unselected.tga"
+        }
+
+        RadioButton:selected {
+            image="fluent/controls/radioButton/selected.tga"
+        }
+
+        "Page RadioButton:selected" {
+            image="fluent/controls/radioButton/selected.tga"
+        }
+
+        RadioButton:hover {
+            textcolor="Text"
+            bgcolor=none
+            image="fluent/controls/radioButton/unselectedHover.tga"
+        }
+
+        "Page RadioButton:hover" {
+            textcolor="Text"
+            bgcolor=none
+            image="fluent/controls/radioButton/page/unselectedHover.tga"
+        }
+
+        RadioButton:selected:hover {
+            textcolor="Texthover"
+            render_bg {}
+            bgcolor=none
+            image="fluent/controls/radioButton/selectedHover.tga"
+        }
+
+        "Page RadioButton:selected:hover" {
+            textcolor="Texthover"
+            render_bg {}
+            bgcolor=none
+            image="fluent/controls/radioButton/selectedHover.tga"
+        }
+
+        RadioButton:selected:active {
+            image="fluent/controls/radioButton/unselectedActive.tga"
+        }
+
+        "Page RadioButton:selected:active" {
+            image="fluent/controls/radioButton/page/unselectedActive.tga"
+        }
+    }
+}

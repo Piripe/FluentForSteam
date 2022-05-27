@@ -1,0 +1,89 @@
+"checkButton.styles" {
+    include "fluent/colors.styles"
+
+    styles {
+        CheckButton {
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            textcolor=white
+            image="fluent/controls/checkButton/unselected.tga"
+        }
+        
+        "Page CheckButton" {
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            textcolor=white
+            image="fluent/controls/checkButton/page/unselected.tga"
+        }
+
+        CheckButton:selected {
+            image="fluent/controls/checkButton/selected.tga"
+        }
+        
+        "Page CheckButton:selected" {
+            image="fluent/controls/checkButton/selected.tga"
+        }
+
+        CheckButton:hover {
+            bgcolor=none
+            image="fluent/controls/checkButton/unselectedHover.tga"
+        }
+
+        "Page CheckButton:hover" {
+            bgcolor=none
+            image="fluent/controls/checkButton/page/unselectedHover.tga"
+        }
+
+        CheckButton:selected:hover {
+            render_bg {}
+            bgcolor=none
+            image="fluent/controls/checkButton/selectedHover.tga"
+        }
+        
+        "Page CheckButton:selected:hover" {
+            render_bg {}
+            bgcolor=none
+            image="fluent/controls/checkButton/selectedHover.tga"
+        }
+
+        CheckButton:active {
+            image="fluent/controls/checkButton/selectedActive.tga"
+        }
+
+        "Page CheckButton:active" {
+            image="fluent/controls/checkButton/page/selectedActive.tga"
+        }
+
+        CheckButton:selected:active {
+            image="fluent/controls/checkButton/unselectedActive.tga"
+        }
+        
+        "Page CheckButton:selected:active" {
+            image="fluent/controls/checkButton/unselectedActive.tga"
+        }
+
+        CheckButton:disabled {
+            bgcolor=none
+            image="fluent/controls/checkButton/unselectedDisabled.tga"
+        }
+
+        "Page CheckButton:disabled" {
+            bgcolor=none
+            image="fluent/controls/checkButton/page/unselectedDisabled.tga"
+        }
+
+        CheckButton:selected:disabled {
+            bgcolor=none
+            image="fluent/controls/checkButton/selectedDisabled.tga"
+            
+        }
+
+        "Page CheckButton:selected:disabled" {
+            bgcolor=none
+            image="fluent/controls/checkButton/selectedDisabled.tga"
+            
+        }
+    }
+}
